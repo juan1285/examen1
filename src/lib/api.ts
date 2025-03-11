@@ -23,8 +23,8 @@ export const updateExamenItem = async (id: number, completado: boolean) => {
 };
 
 export const deleteExamenItem = async (id: number) => {
-  /* Aquí hay un error aproposito, espero lo sepas solucionar */
-  await fetch("/api/examen", {
+  // Corregí la URL aquí a '/api/examenes'
+  await fetch("/api/examenes", {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id }),

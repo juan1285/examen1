@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import { getExamenData, updateExamenItem, deleteExamenItem } from "../lib/api";
 
-/* Acá hay un error aproposito descubrelo */
-export default function studenTable() {
+export default function StudentTable() {
   const [datos, setDatos] = useState<
     { id: number; nombre: string; completado: boolean }[]
   >([]);
@@ -13,9 +12,16 @@ export default function studenTable() {
     async function fetchData() {
       try {
         const data = await getExamenData();
-        setDatos(data);
+        // Verifica si la respuesta es un arreglo
+        if (Array.isArray(data)) {
+          setDatos(data);
+        } else {
+          console.error("Los datos no son un arreglo o están vacíos", data);
+          setDatos([]); // Si no es un arreglo, aseguramos un arreglo vacío
+        }
       } catch (error) {
         console.error("Error cargando datos:", error);
+        setDatos([]); // En caso de error, aseguramos un arreglo vacío
       }
     }
     fetchData();

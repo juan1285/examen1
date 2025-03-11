@@ -6,7 +6,6 @@ The `let datos` declaration is creating an array of objects representing tasks. 
 array has three properties: `id` (a unique identifier for the task), `nombre` (the name or
 description of the task), and `completado` (a boolean indicating whether the task is completed or
 not).
-
 */
 
 let datos = [
@@ -18,8 +17,7 @@ let datos = [
 ];
 
 export async function GET() {
-  /* Aquí hay un error aproposito, espero lo sepas solucionar */
-  return NextResponse.json(gatos);
+  return NextResponse.json(datos);
 }
 
 export async function POST(req: Request) {
@@ -55,7 +53,11 @@ export async function PUT(req: Request) {
 
 export async function DELETE(req: Request) {
   const body = await req.json();
+  const index = datos.findIndex((item) => item.id === body.id);
+  if (index === -1) {
+    return NextResponse.json({ error: "Elemento no encontrado" }, { status: 404 });
+  }
+  
   datos = datos.filter((item) => item.id !== body.id);
-
   return NextResponse.json({ message: "Elemento eliminado" });
 }
