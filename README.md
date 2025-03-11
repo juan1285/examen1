@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Examen de Programación
 
-## Getting Started
+## Antes de que preguntes, ¿cuánto vale el examen? El examen es gratis 💵💵💵💵💵
 
-First, run the development server:
+### Clonación del proyecto - Toma aprox 10 minutos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Ya sabes que tienes que hacer, clona este proyecto, ¿cómo? Ya debes de saberlo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instrucciones
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A continuación se detallan las instrucciones para completar el examen. Cada sección tiene una asignación de puntos específica. Asegúrate de seguir todas las instrucciones y enviar la evidencia requerida.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+No preguntar nada al maestro
 
-## Learn More
+### Corrección de código (10 pts) - Toma aprox 10 minutos
 
-To learn more about Next.js, take a look at the following resources:
+- Chavales, por ahí les puse unos errores a proposito en estos ficheros
+- src/app/api/students/route.ts
+- src/app/lib/api.ts
+- Pueden pedirme que les diga casi casi al oido donde está el error y les ayudo 😎
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Consumo de API (15 pts) Toma aprox 10 minutos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Consume la API proporcionada. Descubre cual sería el endpoint
+- Envía la evidencia del consumo en un documento Word. (Capturas de pantalla obviamente, espero que sepas como se hace)
+- La evidencia debe incluir capturas de pantalla del código y de la respuesta de la API.
+- Deberas probar los 4 métodos del ednpoint.
 
-## Deploy on Vercel
+### 2. Explicación de Métodos HTTP (10 pts) Toma aprox 10 minutos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Explica el funcionamiento de los métodos HTTP `PUT` y `DELETE`. Linea por Linea, realiza un comentario de línea. ¿No sabes que es? Investiga
+- La explicación debe incluir ejemplos de uso y cuándo es apropiado utilizar cada método.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Integración de Componente (15 pts) Toma aprox 5 minutos
+
+- Trae un componente existente a la página principal de la aplicación.
+- Asegúrate de que el componente funcione correctamente y esté bien integrado.
+- Recuerda usar bien los imports, en tu proyecto lo has echo, o espera, ¿no has dedicado tiempo al proyecto y no sabes hacer esto? 🤯
+
+### 4. Documentación del Código (15 pts) Toma aprox 15 minutos
+
+- Documenta el código que has escrito. ¿Que hacen ciertos fragmentos de código? Ciertas funciones, etc, etc...
+- La documentación debe ser clara y detallada, explicando el propósito de cada función y componente.
+
+### 5. Despliegue de la Aplicación (20 pts) Toma aprox 10 minutos
+
+Hey! que bueno que has llegado acá, ¿recuerdas vercel? tienes que cargar tu proyecto acá.
+
+- Despliega la aplicación en un entorno de producción.
+- Proporciona la URL de la aplicación desplegada y asegúrate de que esté accesible.
+
+### 6. Presentación Final (10 pts) Toma aprox 10 ( 5 diapositivas )
+
+- Prepara una presentación final en PowerPoint sobre la aplicación
+- La presentación debe incluir una visión general del proyecto, los desafíos enfrentados y las soluciones implementadas.
+
+## Entrega (10 pts) - 10 minutos
+
+- Envía todos los archivos y documentos requeridos a tu repositorio. Y el word?? También ahí va. (Tooooodos los archivos dice la instrucción)
+- Asegúrate de que todos los archivos estén bien organizados y claramente nombrados.
+
+¡Buena suerte! Si la vas a necesitar, y pidele a la IA que te alcancen las peticiones para poder resolver
